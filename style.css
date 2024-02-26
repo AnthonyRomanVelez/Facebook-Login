@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(242, 246, 247);
+}
+header img{
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    width: 432px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 2px rgba(0, 0, 0, .1),  4px 8px 16px rgba(0, 0, 0, .1);
+}
+.account-text, .credentials {
+    border-bottom: 1px solid rgb(220, 217, 217);
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+.create-account-text, .text-credentials {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+.text-credentials p {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.quick-easy-account-text {
+    background-color: white;
+    color: rgb(148, 146, 146);
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.text {
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(203, 200, 200);
+    background-color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+.email, .password {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 8px;
+    background-color: white;
+}
+.fill-section {
+    width: 432px;
+    background-color: white;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "firstName lastName"
+        "phone-email phone-email"
+        "password password";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.firstName {
+    grid-area: firstName;
+}
+.lastName {
+    grid-area: lastName;
+}
+.phone-email {
+    grid-area: phone-email;
+}
+.password {
+    grid-area: password;
+}
+
+.date-gender {
+    background-color: white;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "birthday birthday birthday"
+        "month day year"
+        "gender gender gender"
+        "female male other";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.birthday, .gender {
+    grid-area: birthday;
+    justify-self: baseline;
+    font-size: 12px;
+    align-self: end;
+}
+.month {
+    grid-area: month;
+}
+.day {
+    grid-area: day;
+}
+.year {
+    grid-area: year;
+}
+.gender {
+    grid-area: gender;
+}
+.female {
+    grid-area: female;
+}
+.male {
+    grid-area: male;
+}
+.other {
+    grid-area: other;
+}
+label {
+    border: 1px solid rgb(191, 189, 189);
+    padding: 8px;
+    border-radius: 5px;
+    text-align: left;
+}
+.female input, .male input, .other input {
+   position: absolute;
+   margin-left: 40px;
+   margin-top: 2px;
+}
+.male input {
+    margin-left: 60px;
+}
+.other input {
+    margin-left: 55px;
+}
+#month, #year, #day {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 194, 194);
+}
+select {
+    padding: 8px;
+    width: 100%;
+}
+.disclaimer-button, .login-button {
+    display: box;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+.disclaimer-button p {
+    color: rgb(139, 137, 137);
+    font-size: 11px;
+    text-align: left;
+    line-height: 15px;
+}
+.disclaimer-button a {
+    text-decoration: none;
+}
+.disclaimer-button button {
+    background-color: #00a400;
+    border: 1px solid #00a400;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+.disclaimer-button h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.disclaimer-button h3 a {
+    color: rgb(100, 100, 255);
+    font-weight: lighter;
+}
+.login-button button{
+    width: 95%;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #1877f2;
+    border: 1px solid #1877f2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.forgot-account {
+    text-decoration: none;
+    color:#1877f2;
+    font-size: 15px;
+}
+.create-account {
+    width: 100%;
+    margin: auto;  
+    background-color: white; 
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+.create-account-button, .create-account-button a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #00a400;
+    border: 1px solid #00a400;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.or {
+    background-color: white;
+    font-size: 12px;
+    padding-bottom: 15px;
+    border-top: 1px solid  rgb(203, 200, 200);
+}
+
